@@ -2,6 +2,7 @@ import * as React from "react";
 import Helmet from "react-helmet";
 import { withStyles } from "../../helpers/withStylesHelper";
 import JoinForm from "../joinForm";
+import Declaration from "../declaration/index";
 
 const styles = require("./home.scss");
 
@@ -13,6 +14,7 @@ export default class HomeComponent extends React.PureComponent<IHomeComponentPro
     return (
       <div className={styles.homeWrapper}>
         <Helmet title="Join Pluto Network!" />
+        <Declaration />
         <JoinForm />
       </div>
     );
